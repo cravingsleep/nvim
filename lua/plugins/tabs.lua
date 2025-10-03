@@ -2,7 +2,7 @@ return {
     "romgrk/barbar.nvim",
     dependencies = {
         {"lewis6991/gitsigns.nvim", commit = "1ee5c1fd068c81f9dd06483e639c2aa4587dc197"},
-        {"nvim-tree/nvim-web-devicons", commit = "b8221e42cf7287c4dcde81f232f58d7b947c210d"}
+        {"nvim-tree/nvim-web-devicons", commit = DepsCommits.devicons }
     },
     lazy = false,
     init = function()

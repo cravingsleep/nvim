@@ -17,7 +17,6 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 -- add line numbers
@@ -44,6 +43,13 @@ vim.opt.termguicolors = true
 -- vim will tell us the showmode in the command buffer but lualine will do
 -- that for us so disable it
 vim.opt.showmode = false
+
+-- when the LSP reports something bad we do not want any signs in the gutter
+vim.diagnostic.config({
+	signs = false,
+	virtual_text = true,
+	underline = true,
+})
 
 -- Setup lazy.nvim
 require("lazy").setup({
