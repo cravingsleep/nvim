@@ -41,6 +41,10 @@ vim.g.loaded_netrwPlugin = 1
 -- enable 24 bit colour
 vim.opt.termguicolors = true
 
+-- vim will tell us the showmode in the command buffer but lualine will do
+-- that for us so disable it
+vim.opt.showmode = false
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
