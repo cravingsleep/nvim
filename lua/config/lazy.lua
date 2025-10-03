@@ -51,6 +51,9 @@ vim.diagnostic.config({
 	underline = true,
 })
 
+-- save quickly because I'm bad at hitting the : key
+vim.keymap.set("n", "<leader>w", "<cmd>w<CR>", { noremap = true })
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {

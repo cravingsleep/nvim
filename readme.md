@@ -17,12 +17,15 @@ Just git clone into `~/.config/nvim`.
 - tar (provided by default on OSX)
 - curl (provided by default on OSX)
 
-## Basics
+## Vim Basics
 
 - Relative line numbers are on
 - The system clipboard is connected to yank
 - Search uses smartcase
 - The theme is [dracula](https://github.com/Mofiqul/dracula.nvim)
+- The leader key is the spacebar
+- Saving a file is bound to `<leader>w`
+- Exiting terminal mode can be done with `jj`
 
 ## Recommended Key Swaps
 
