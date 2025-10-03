@@ -11,9 +11,14 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 
 ### Tabs
 
-- `[b` go to the previous tab
-- `]b` go to the next tab
+|Keys|Action|
+|----|------|
+|`[b`|go to previous tab|
+|`]b`|go to next tab|
 
 ### Git
 
-- `<leader>hd` highlights the git diff
+|Keys|Action|
+|----|------|
+|`<leader>hd` |highlights the git diff|
+
