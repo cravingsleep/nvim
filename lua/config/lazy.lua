@@ -20,22 +20,6 @@ vim.opt.rtp:prepend(lazypath)
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-
--- Setup lazy.nvim
-require("lazy").setup({
-  spec = {
-    -- import your plugins
-    { import = "plugins" },
-  },
-  -- Configure any other settings here. See the documentation for more details.
-  -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "dracula" } },
-  -- automatically check for plugin updates
-  checker = { enabled = true },
-})
-
--- set the colorscheme across the whole of nvim
-vim.cmd("colorscheme dracula")
 -- add line numbers
 vim.opt.number = true
 -- make the line numbers the cursor is not on relative to the cursor
@@ -56,3 +40,17 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 -- enable 24 bit colour
 vim.opt.termguicolors = true
+
+-- Setup lazy.nvim
+require("lazy").setup({
+  spec = {
+    -- import your plugins
+    { import = "plugins" },
+  },
+  -- Configure any other settings here. See the documentation for more details.
+  -- colorscheme that will be used when installing plugins.
+  install = { colorscheme = { "dracula" } },
+  -- automatically check for plugin updates
+  checker = { enabled = true },
+})
+

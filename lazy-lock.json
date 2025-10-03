@@ -1,6 +1,8 @@
 {
+  "barbar.nvim": { "branch": "master", "commit": "53b5a2f34b68875898f0531032fbf090e3952ad7" },
   "dracula.nvim": { "branch": "main", "commit": "041d923368d540a1e438989ce8f915628081a56a" },
   "gitsigns.nvim": { "branch": "main", "commit": "1ee5c1fd068c81f9dd06483e639c2aa4587dc197" },
   "lazy.nvim": { "branch": "main", "commit": "59334064f8604ca073791c25dcc5c9698865406e" },
-  "nvim-treesitter": { "branch": "master", "commit": "99bd52ba56a4b7c9a8cc50a6140180755e76fac6" }
+  "nvim-treesitter": { "branch": "master", "commit": "99bd52ba56a4b7c9a8cc50a6140180755e76fac6" },
+  "nvim-web-devicons": { "branch": "master", "commit": "b8221e42cf7287c4dcde81f232f58d7b947c210d" }
 }
