@@ -28,7 +28,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 -- connect yank with the system clipboard
 vim.opt.clipboard = "unnamedplus"
--- highlight the yanked text for 200ms
+-- highlight the yanked text for a short time afterwards
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
 		vim.highlight.on_yank({ higroup = "IncSearch", timeout = 150 })
