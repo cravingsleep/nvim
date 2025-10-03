@@ -59,9 +59,32 @@ place which can then be imported and referenced. This keeps the source of truth 
 those dependencies in one place; allowing easy updating and avoids multiple potential
 versions.
 
-## Tabs
+## Plugins
+
+### Tabs
 
 Tabs are made prettier with [barbar](https://github.com/romgrk/barbar.nvim). The only QoL
 change to the default settings are turning off animations.
 
 See the [keymaps](./keymap.md#tabs)
+
+### Status Line
+
+The status line at the bottom of the editor is provided by [lualine](https://github.com/nvim-lualine/lualine.nvim).
+
+The status line displays the mode, git branch, lsp status, filesize and cursor position.
+
+### Treesitter
+
+Treesitting is provided by [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/tree/main) which allows
+for special syntax highlighting and code navigation.
+
+The list of supported languages is: `{ 'lua', 'typescript', 'typescriptreact', 'python', 'c', 'rust' }` because these are
+what I work on but they can be added to [here](./lua/plugins/treesitter.lua) fairly easily. Running `:TSUpdate` every now
+and again is also wise to keep the definitions fresh.
+
+### Git Integration
+
+The gutter shows where changes to the file have been made with green for addition, blue for modification and red for deletion.
+
+See the [keymaps](./keymap.md#git)
