@@ -1,14 +1,14 @@
-## Neovim
+# Neovim Config
 
 A simple minimalist neovim config designed to stay out your way and keep things vim.
 
-### Installation
+## Installation
 
 Just git clone into `~/.config/nvim`.
 
 **This distro only supports OSX.**
 
-### Dependencies
+## Dependencies
 
 - [neovim](https://neovim.io/) >= 0.11.4
 - [git](https://git-scm.com/)
@@ -17,14 +17,24 @@ Just git clone into `~/.config/nvim`.
 - tar (provided by default on OSX)
 - curl (provided by default on OSX)
 
-### Basics
+## Basics
 
 - Relative line numbers are on
 - The system clipboard is connected to yank
-- Search is using smartcase
+- Search uses smartcase
 - The theme is [dracula](https://github.com/Mofiqul/dracula.nvim)
 
-### Package Management
+## Recommended Key Swaps
+
+Using [karabiner](https://karabiner-elements.pqrs.org/) it is recommend to change
+the Caps Lock key to Ctrl and adding these two complex key replacements:
+
+- `<Ctrl-j>` is `<DownArrow>`
+- `<Ctrl-k>` is `<UpArrow>`
+
+This lets you navigate pop up menus without having to exit their search bar quickly.
+
+## Package Management
 
 The [lazy](https://github.com/folke/lazy.nvim) package manager is used to install the
 various plugins.
