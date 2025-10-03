@@ -64,7 +64,7 @@ versions.
 ### Tabs
 
 Tabs are made prettier with [barbar](https://github.com/romgrk/barbar.nvim). The only QoL
-change to the default settings are turning off animations.
+change to the default settings is turning off the animations.
 
 See the [keymaps](./keymap.md#tabs)
 
