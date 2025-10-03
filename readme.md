@@ -37,6 +37,10 @@ the Caps Lock key to Ctrl and adding these two complex key replacements:
 
 This lets you navigate pop up menus without having to exit their search bar quickly.
 
+## Keymaps
+
+See all the keymaps in this [complete list](./keymap.md)
+
 ## Package Management
 
 The [lazy](https://github.com/folke/lazy.nvim) package manager is used to install the
@@ -54,3 +58,10 @@ in [./init.lua](./init.lua). This stores the commits to use for those packages i
 place which can then be imported and referenced. This keeps the source of truth for
 those dependencies in one place; allowing easy updating and avoids multiple potential
 versions.
+
+## Tabs
+
+Tabs are made prettier with [barbar](https://github.com/romgrk/barbar.nvim). The only QoL
+change to the default settings are turning off animations.
+
+See the [keymaps](./keymap.md#tabs)

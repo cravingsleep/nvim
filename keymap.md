@@ -15,6 +15,7 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |----|------|
 |`[b`|go to previous tab|
 |`]b`|go to next tab|
+|`<C-p>`|select tab using key|
 
 ### Git
 
