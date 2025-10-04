@@ -42,6 +42,10 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |Keys|Action|
 |----|------|
 |`<leader>ca`|view code actions|
+|`gd`|show definitions|
+|`gr`|show references|
+|`gk`|show diagnostic in full|
+|`gK`|show lsp hover info|
 
 ### Formatting
 
