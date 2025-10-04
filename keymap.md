@@ -42,3 +42,9 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |Keys|Action|
 |----|------|
 |`<leader>ca`|view code actions|
+
+### Formatting
+
+|Keys|Action|
+|----|------|
+|`<leader>f`|format document|
