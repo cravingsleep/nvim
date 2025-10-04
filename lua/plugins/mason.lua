@@ -7,6 +7,9 @@ return {
       -- Lua
       'stylua',
       'lua_ls',
+
+      -- Rust
+      'rust_analyzer',
     },
   },
   dependencies = {
@@ -17,5 +20,12 @@ return {
     vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { noremap = true })
 
     -- set any custom LSP configs here with `vim.lsp.config`
+    vim.lsp.config('rust_analyzer', {
+      settings = {
+        ['rust-analyzer'] = {
+          check = { command = 'clippy' },
+        },
+      },
+    })
   end,
 }
