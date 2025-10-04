@@ -123,3 +123,9 @@ Formatting is handled by [conform](https://github.com/stevearc/conform.nvim) whi
 to the right filetypes. See that config [here](./lua/plugins/conform.lua).
 
 See the [keymaps](./keymap.md#formatting)
+
+### In Buffer Navigation
+
+To aid navigation in the buffer the [flash](https://github.com/folke/flash.nvim) plugin is included which allows the `f` and `t` motions
+to work across multiple lines as well as highlighting the possible movements it will make. Note the search and remote functionality is
+switched off.
