@@ -54,6 +54,9 @@ vim.diagnostic.config({
 -- save quickly because I'm bad at hitting the : key
 vim.keymap.set("n", "<leader>w", "<cmd>w<CR>", { noremap = true })
 
+-- Press jj to exit terminal mode
+vim.api.nvim_set_keymap("t", "jj", [[<C-\><C-n>]], { noremap = true, silent = true })
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {

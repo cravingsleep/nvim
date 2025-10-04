@@ -30,3 +30,9 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |`<leader><leader>`|open file finder|
 |`<leader/`|search in project|
 |`<leader>s`|show lsp document symbols|
+
+### File Tree
+
+|Keys|Action|
+|----|------|
+|`<leader>e`|open file tree|
