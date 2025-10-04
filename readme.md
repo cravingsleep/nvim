@@ -91,7 +91,7 @@ See the [keymaps](./keymap.md#git)
 
 ### File Finder
 
-The file finder is provided by [fzf-lua](https://github.com/ibhagwan/fzf-lua). The filename should be appear first when searching
+The file finder is provided by [fzf-lua](https://github.com/ibhagwan/fzf-lua). The filename should appear first when searching
 in deeply nested folders and common folders like `.git` and `node_modules` are automatically ignored.
 
 `fzf-lua` also provides the ability to look at LSP document symbols.
