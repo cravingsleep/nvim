@@ -23,3 +23,10 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |----|------|
 |`<leader>hd` |highlights the git diff|
 
+### File Finder
+
+|Keys|Action|
+|----|------|
+|`<leader><leader>`|open file finder|
+|`<leader/`|search in project|
+|`<leader>s`|show lsp document symbols|

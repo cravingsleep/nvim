@@ -65,5 +65,19 @@ require("lazy").setup({
   install = { colorscheme = { "dracula" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
+  performance = {
+    rtp = {
+      -- disable some rtp plugins
+      disabled_plugins = {
+        "gzip",
+        "tarPlugin",
+        "tohtml",
+        "tutor",
+        "zipPlugin",
+	"spellfile",
+	"netrwPlugin"
+      },
+    },
+  },
 })
 
