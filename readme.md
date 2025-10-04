@@ -104,3 +104,12 @@ The file tree uses [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim) an
 on top of the current buffer. It always opens focused on the current open buffer.
 
 See the [keymaps](./keymap.md#file-tree)
+
+### LSP
+
+LSPs are managed by [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim/tree/main) which ensures the correct LSPs are
+installed and automatically enables them. It also manages packages for formatters too.
+
+The actual work for communicating with the LSP and reporting the diagnostics is done by the built-int `vim.lsp`.
+
+See the [keymaps](./keymap.md#lsp)
