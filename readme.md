@@ -97,3 +97,10 @@ in deeply nested folders and common folders like `.git` and `node_modules` are a
 `fzf-lua` also provides the ability to look at LSP document symbols.
 
 See the [keymaps](./keymap.md#file-finder)
+
+### File Tree
+
+The file tree uses [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim) and both imitates and improves on netrw by appearing
+on top of the current buffer. It always opens focused on the current open buffer.
+
+See the [keymaps](./keymap.md#file-tree)
