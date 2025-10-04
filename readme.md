@@ -113,3 +113,10 @@ installed and automatically enables them. It also manages packages for formatter
 The actual work for communicating with the LSP and reporting the diagnostics is done by the built-int `vim.lsp`.
 
 See the [keymaps](./keymap.md#lsp)
+
+### Formatting
+
+Formatting is handled by [conform](https://github.com/stevearc/conform.nvim) which sets up format on save and links the right formatters
+to the right filetypes. See that config [here](./lua/plugins/conform.lua).
+
+See the [keymaps](./keymap.md#formatting)
