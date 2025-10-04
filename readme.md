@@ -112,6 +112,9 @@ installed and automatically enables them. It also manages packages for formatter
 
 The actual work for communicating with the LSP and reporting the diagnostics is done by the built-int `vim.lsp`.
 
+The UI for showing LSP definition and references is handled by [glance](https://github.com/DNLHC/glance.nvim). This shows up as a
+detached window with the files on the left and a preview window on the right.
+
 See the [keymaps](./keymap.md#lsp)
 
 ### Formatting
