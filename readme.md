@@ -124,8 +124,12 @@ to the right filetypes. See that config [here](./lua/plugins/conform.lua).
 
 See the [keymaps](./keymap.md#formatting)
 
-### In Buffer Navigation
+### In Buffer Utilities
 
 To aid navigation in the buffer the [flash](https://github.com/folke/flash.nvim) plugin is included which allows the `f` and `t` motions
 to work across multiple lines as well as highlighting the possible movements it will make. Note the search and remote functionality is
 switched off.
+
+The [autopairs](https://github.com/windwp/nvim-autopairs) plugin is also installed which will automatically complete brackets as you type.
+
+The [nvim-surround](https://github.com/kylechui/nvim-surround/tree/main) plugin lets you add, change and delete surroundings.
