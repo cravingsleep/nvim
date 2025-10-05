@@ -115,6 +115,9 @@ The actual work for communicating with the LSP and reporting the diagnostics is 
 The UI for showing LSP definition and references is handled by [glance](https://github.com/DNLHC/glance.nvim). This shows up as a
 detached window with the files on the left and a preview window on the right.
 
+Autocomplete is handled by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) which pulls from the LSP, the buffer and paths. There is no
+snippet engine enabled and snippets are also filtered from the LSP response.
+
 See the [keymaps](./keymap.md#lsp)
 
 ### Formatting
