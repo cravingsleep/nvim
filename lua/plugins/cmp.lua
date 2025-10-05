@@ -29,7 +29,7 @@ return {
         sources = cmp.config.sources({
           {
             name = 'nvim_lsp',
-            -- I personally never use the snippets reccommended by the LSP so I am
+            -- I personally never use the snippets recommended by the LSP so I am
             -- disabling them so the autocomplete is more sparse and relevant
             entry_filter = function(entry) return entry.completion_item.insertTextFormat ~= 2 end,
           },
