@@ -56,6 +56,20 @@ vim.keymap.set('n', '<leader>w', '<cmd>w<CR>', { noremap = true })
 -- Press jj to exit terminal mode
 vim.api.nvim_set_keymap('t', 'jj', [[<C-\><C-n>]], { noremap = true, silent = true })
 
+-- Yank absolute path of buffer to clipboard
+vim.keymap.set('n', '<leader>ya', function()
+  local path = vim.fn.expand('%:p')
+  vim.fn.setreg('+', path)
+  print(path)
+end, { noremap = true })
+
+-- Yank relative path of buffer to clipboard
+vim.keymap.set('n', '<leader>yr', function()
+  local path = vim.fn.expand('%')
+  vim.fn.setreg('+', path)
+  print(path)
+end, { noremap = true })
+
 -- Setup lazy.nvim
 require('lazy').setup({
   spec = {

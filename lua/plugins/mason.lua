@@ -17,6 +17,18 @@ return {
     { 'neovim/nvim-lspconfig', version = '2.5.0' },
   },
   init = function()
+    -- install formatters since lspconfig can not do them all
+    local registry = require('mason-registry')
+    local wanted_tools = {}
+
+    for _, tool in ipairs(wanted_tools) do
+      local pkg = registry.get_package(tool)
+      if not pkg:is_installed() then
+        print('Mason: installing ' .. tool .. '...')
+        pkg:install()
+      end
+    end
+
     vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { noremap = true })
 
     -- set any custom LSP configs here with `vim.lsp.config`
