@@ -20,6 +20,8 @@ vim.opt.rtp:prepend(lazypath)
 -- loading lazy.nvim so that mappings are correct.
 vim.g.mapleader = ' '
 vim.g.maplocalleader = '\\'
+-- Keep the sign column visible all the time to avoid content shift
+vim.opt.signcolumn = 'yes'
 -- add line numbers
 vim.opt.number = true
 -- make the line numbers the cursor is not on relative to the cursor
@@ -68,6 +70,31 @@ vim.keymap.set('n', '<leader>yr', function()
   local path = vim.fn.expand('%')
   vim.fn.setreg('+', path)
   print(path)
+end, { noremap = true })
+
+-- quick access to the terminal
+vim.keymap.set('n', '<leader>t', function()
+  local current_buf = vim.api.nvim_get_current_buf()
+  local buftype = vim.api.nvim_buf_get_option(current_buf, 'buftype')
+
+  -- If we're already in a terminal, toggle back
+  if buftype == 'terminal' then
+    vim.cmd('b#')
+    return
+  end
+
+  -- Try to find an existing terminal buffer
+  for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+    if vim.api.nvim_buf_is_loaded(buf) and vim.api.nvim_buf_get_option(buf, 'buftype') == 'terminal' then
+      vim.api.nvim_set_current_buf(buf)
+      vim.cmd('startinsert') -- enter insert mode in terminal
+      return
+    end
+  end
+
+  -- Otherwise, open a new terminal
+  vim.cmd('te')
+  vim.cmd('startinsert') -- immediately enter insert mode
 end, { noremap = true })
 
 -- Setup lazy.nvim

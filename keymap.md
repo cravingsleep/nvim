@@ -7,9 +7,15 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |Keys|Action|
 |----|------|
 |`<leader>w`|`:w`|
-|`jj`|exit terminal mode|
 |`<leader>ya`|yank absolute path of buffer|
 |`<leader>yr`|yank relative path of buffer|
+
+### Terminal
+
+|Keys|Action|
+|----|------|
+|`<leader>t`|toggle terminal tab|
+|`jj`|exit terminal mode|
 
 ### Tabs
 

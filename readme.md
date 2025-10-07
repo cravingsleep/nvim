@@ -25,7 +25,16 @@ Just git clone into `~/.config/nvim`.
 - The theme is [dracula](https://github.com/Mofiqul/dracula.nvim)
 - The leader key is the spacebar
 - Saving a file is bound to `<leader>w`
-- Exiting terminal mode can be done with `jj`
+
+## Terminal
+
+A terminal tab can be opened by using `<leader>t`. This will open a new terminal if one does not exist. If
+one does exist it will switch the tab to it. It automatically puts you in insert mode which can be exited
+quickly by using `jj`.
+
+Pressing `<leader>t` in normal mode in a terminal tab will go back the previously accessed tab.
+
+See the [keymaps](./keymap.md#terminal)
 
 ## Recommended Key Swaps
 
