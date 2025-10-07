@@ -38,7 +38,7 @@ See the [keymaps](./keymap.md#terminal)
 
 ## Recommended Key Swaps
 
-Using [karabiner](https://karabiner-elements.pqrs.org/) it is recommend to change
+Using [karabiner](https://karabiner-elements.pqrs.org/) it is recommended to change
 the Caps Lock key to Ctrl and adding these two complex key replacements:
 
 - `<Ctrl-j>` is `<DownArrow>`
