@@ -22,6 +22,8 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = '\\'
 -- Keep the sign column visible all the time to avoid content shift
 vim.opt.signcolumn = 'yes'
+-- highlight the line the cursor is on
+vim.opt.cursorline = true
 -- add line numbers
 vim.opt.number = true
 -- make the line numbers the cursor is not on relative to the cursor
