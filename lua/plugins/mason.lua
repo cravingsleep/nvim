@@ -30,6 +30,7 @@ return {
     end
 
     vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { noremap = true })
+    vim.keymap.set('n', 'g.', vim.lsp.buf.code_action, { noremap = true })
 
     -- set any custom LSP configs here with `vim.lsp.config`
     vim.lsp.config('rust_analyzer', {
