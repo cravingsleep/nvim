@@ -36,7 +36,7 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |Keys|Action|
 |----|------|
 |`<leader><leader>`|open file finder|
-|`<leader/`|search in project|
+|`<leader/` or `g/`|search in project|
 |`<leader>s`|show lsp document symbols|
 
 ### File Tree
@@ -49,7 +49,7 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 
 |Keys|Action|
 |----|------|
-|`<leader>ca`|view code actions|
+|`<leader>ca` or `g.`|view code actions|
 |`gd`|show definitions|
 |`gr`|show references|
 |`gk`|show diagnostic in full|

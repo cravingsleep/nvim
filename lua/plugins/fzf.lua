@@ -15,6 +15,7 @@ return {
   keys = {
     { '<leader><leader>', function() require('fzf-lua').files() end, { noremap = true, silent = true } },
     { '<leader>/', function() require('fzf-lua').live_grep() end, { noremap = true, silent = true } },
+    { 'g/', function() require('fzf-lua').live_grep() end, { noremap = true, silent = true } },
     { '<leader>s', function() require('fzf-lua').lsp_document_symbols() end, { noremap = true, silent = true } },
   },
 }
