@@ -14,6 +14,11 @@ Just git clone into `~/.config/nvim`.
 - [git](https://git-scm.com/)
 - [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md)
 - [C compiler](https://docs.rs/cc/latest/cc/#compile-time-requirements) (provided if Xcode is installed)
+- any [nerdfont](https://www.nerdfonts.com/)
+- [fd](https://github.com/sharkdp/fd) (`brew install fd`)
+- [ripgrep](https://github.com/BurntSushi/ripgrep) (`brew install ripgrep`)
+- [fzf](https://github.com/junegunn/fzf) (`brew install fzf`)
+- [yazi](https://yazi-rs.github.io/) (`brew install yazi`)
 - tar (provided by default on OSX)
 - curl (provided by default on OSX)
 
@@ -109,8 +114,7 @@ See the [keymaps](./keymap.md#file-finder)
 
 ### File Tree
 
-The file tree uses [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim) and both imitates and improves on netrw by appearing
-on top of the current buffer. It always opens focused on the current open buffer.
+The file tree is provided by [yazi](https://yazi-rs.github.io/).
 
 See the [keymaps](./keymap.md#file-tree)
 
