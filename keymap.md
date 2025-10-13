@@ -51,6 +51,7 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |----|------|
 |`<leader>ca` or `g.`|view code actions|
 |`<leader>s`|show lsp document symbols|
+|`<leader>d`|show lsp diagnostics|
 |`gd`|show definitions|
 |`gr`|show references|
 |`gk`|show diagnostic in full|
