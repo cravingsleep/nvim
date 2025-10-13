@@ -17,13 +17,13 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |`<leader>t`|toggle terminal tab|
 |`jj`|exit terminal mode|
 
-### Tabs
+### Buffer Navigation
 
 |Keys|Action|
 |----|------|
-|`[b`|go to previous tab|
-|`]b`|go to next tab|
-|`<C-p>`|select tab using key|
+|`[b`|go to next item in harpoon list|
+|`]b`|go to previous item in harpoon list|
+|`<C-e>`|select from harpoon list|
 
 ### Git
 

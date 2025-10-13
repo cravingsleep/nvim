@@ -10,7 +10,7 @@ return {
     },
     sections = {
       lualine_a = { 'mode', 'branch' },
-      lualine_b = {},
+      lualine_b = { 'filename' },
       lualine_c = {},
       lualine_x = { 'lsp_status', 'filesize' },
       lualine_y = { 'progress' },
