@@ -30,6 +30,7 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |Keys|Action|
 |----|------|
 |`<leader>hd` |highlights the git diff|
+|`<leader>gs` |view the project git status|
 
 ### File Finder
 
@@ -37,7 +38,6 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |----|------|
 |`<leader><leader>`|open file finder|
 |`<leader/` or `g/`|search in project|
-|`<leader>s`|show lsp document symbols|
 
 ### File Tree
 
@@ -50,6 +50,8 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |Keys|Action|
 |----|------|
 |`<leader>ca` or `g.`|view code actions|
+|`<leader>s`|show lsp document symbols|
+|`<leader>d`|show lsp diagnostics|
 |`gd`|show definitions|
 |`gr`|show references|
 |`gk`|show diagnostic in full|
