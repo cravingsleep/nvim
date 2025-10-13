@@ -101,6 +101,8 @@ and again is also wise to keep the definitions fresh.
 
 The gutter shows where changes to the file have been made with green for addition, blue for modification and red for deletion.
 
+You can also view the git status of the project by using `<leader>gs`.
+
 See the [keymaps](./keymap.md#git)
 
 ### File Finder
