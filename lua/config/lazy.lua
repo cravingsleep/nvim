@@ -57,6 +57,9 @@ vim.diagnostic.config({
 -- save quickly because I'm bad at hitting the : key
 vim.keymap.set('n', '<leader>w', '<cmd>w<CR>', { noremap = true })
 
+-- remove search highlights
+vim.keymap.set('n', '<leader>nh', '<cmd>noh<cr>', { noremap = true, silent = true })
+
 -- Press Ctrl-[ to exit terminal mode
 vim.api.nvim_set_keymap('t', '<C-[>', [[<C-\><C-n>]], { noremap = true, silent = true })
 

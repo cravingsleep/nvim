@@ -9,6 +9,7 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |`<leader>w`|`:w`|
 |`<leader>ya`|yank absolute path of buffer|
 |`<leader>yr`|yank relative path of buffer|
+|`<leader>nh`|remove search highlighting|
 
 ### Terminal
 
