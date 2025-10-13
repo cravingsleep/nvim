@@ -15,10 +15,13 @@ return {
       lualine_c = {},
       lualine_x = {
         { 'lsp_status', cond = function() return vim.bo.buftype ~= 'terminal' end },
-        { 'filesize', cond = function() return vim.bo.buftype ~= 'terminal' end },
       },
-      lualine_y = { { 'progress', cond = function() return vim.bo.buftype ~= 'terminal' end } },
-      lualine_z = { { 'location', cond = function() return vim.bo.buftype ~= 'terminal' end } },
+      lualine_y = {
+        { 'location', cond = function() return vim.bo.buftype ~= 'terminal' end },
+      },
+      lualine_z = {
+        { 'datetime', style = '%H:%M' },
+      },
     },
   },
 }
