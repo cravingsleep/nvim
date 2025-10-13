@@ -12,7 +12,7 @@ return {
       lualine_a = { 'mode', 'branch' },
       lualine_b = { 'filename' },
       lualine_c = {},
-      lualine_x = {},
+      lualine_x = { 'lsp_status', 'filesize' },
       lualine_y = { 'progress' },
       lualine_z = { 'location' },
     },
