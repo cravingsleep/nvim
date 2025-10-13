@@ -75,10 +75,10 @@ versions.
 
 ## Plugins
 
-### Tabs
+### Buffer Navigation
 
-Tabs are made prettier with [barbar](https://github.com/romgrk/barbar.nvim). The only QoL
-change to the default settings is turning off the animations.
+To navigate buffers you can use [harpoon](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) which allows you
+to add commonly added buffers using `<leader>a` and see them in a Telescope window with `<C-e>`.
 
 See the [keymaps](./keymap.md#tabs)
 
@@ -86,7 +86,7 @@ See the [keymaps](./keymap.md#tabs)
 
 The status line at the bottom of the editor is provided by [lualine](https://github.com/nvim-lualine/lualine.nvim).
 
-The status line displays the mode, git branch, lsp status, filesize and cursor position.
+The status line displays the mode, git branch, filename, lsp status, filesize and cursor position.
 
 ### Treesitter
 
