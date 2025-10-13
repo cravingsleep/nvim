@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 return {
   'nvim-lualine/lualine.nvim',
   dependencies = {
@@ -12,9 +13,12 @@ return {
       lualine_a = { 'mode', 'branch' },
       lualine_b = { 'filename' },
       lualine_c = {},
-      lualine_x = { 'lsp_status', 'filesize' },
-      lualine_y = { 'progress' },
-      lualine_z = { 'location' },
+      lualine_x = {
+        { 'lsp_status', cond = function() return vim.bo.buftype ~= 'terminal' end },
+        { 'filesize', cond = function() return vim.bo.buftype ~= 'terminal' end },
+      },
+      lualine_y = { { 'progress', cond = function() return vim.bo.buftype ~= 'terminal' end } },
+      lualine_z = { { 'location', cond = function() return vim.bo.buftype ~= 'terminal' end } },
     },
   },
 }
