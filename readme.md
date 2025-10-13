@@ -86,7 +86,7 @@ See the [keymaps](./keymap.md#tabs)
 
 The status line at the bottom of the editor is provided by [lualine](https://github.com/nvim-lualine/lualine.nvim).
 
-The status line displays the mode, git branch, filename, lsp status, filesize and cursor position.
+The status line displays the mode, git branch, filename, lsp status, cursor position and the time.
 
 ### Treesitter
 
