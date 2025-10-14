@@ -14,6 +14,7 @@ return {
     formatters_by_ft = {
       lua = { 'stylua' },
       rust = { 'rustfmt' },
+      python = { 'ruff' },
     },
     default_format_opts = {
       lsp_format = 'fallback',
