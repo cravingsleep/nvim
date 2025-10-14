@@ -10,6 +10,9 @@ return {
 
       -- Rust
       'rust_analyzer',
+
+      -- python
+      'basedpyright',
     },
   },
   dependencies = {
@@ -19,7 +22,7 @@ return {
   init = function()
     -- install formatters since lspconfig can not do them all
     local registry = require('mason-registry')
-    local wanted_tools = {}
+    local wanted_tools = { 'ruff' }
 
     for _, tool in ipairs(wanted_tools) do
       local pkg = registry.get_package(tool)
