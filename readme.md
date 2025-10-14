@@ -122,6 +122,11 @@ See the [keymaps](./keymap.md#file-tree)
 LSPs are managed by [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim/tree/main) which ensures the correct LSPs are
 installed and automatically enables them. It also manages packages for formatters too.
 
+The languages that come ready to go with pre-installed LSPs and formatters are:
+- rust
+- python
+- typescript
+
 The actual work for communicating with the LSP and reporting the diagnostics is done by the built-int `vim.lsp`.
 
 The UI for showing LSP definition and references is handled by [glance](https://github.com/DNLHC/glance.nvim). This shows up as a
