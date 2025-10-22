@@ -59,6 +59,12 @@ return {
       { noremap = true },
     },
     {
+      '<leader>pd',
+      function() require('telescope.builtin').diagnostics() end,
+      { noremap = true },
+    },
+
+    {
       '<leader>gs',
       function() require('telescope.builtin').git_status() end,
       { noremap = true },
