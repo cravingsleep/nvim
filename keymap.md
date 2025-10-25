@@ -22,10 +22,10 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 
 |Keys|Action|
 |----|------|
-|`<leader>b`|show all buffers|
-|`[b`|go to next item in harpoon list|
-|`]b`|go to previous item in harpoon list|
-|`<C-e>`|select from harpoon list|
+|`<leader>b`|show all buffers with preview|
+|`<C-e>`|show all buffers in manager|
+|`[b`|go to previous buffer|
+|`]b`|go to next buffer|
 
 ### Git
 

@@ -77,8 +77,8 @@ versions.
 
 ### Buffer Navigation
 
-To navigate buffers you can use [harpoon](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) which allows you
-to add commonly used buffers using `<leader>a` and see them in a window with `<C-e>`.
+Navigating buffers is provided by [buffer-manager](https://github.com/j-morano/buffer_manager.nvim). Buffers can be viewed, opened
+and deleted with it. It will always focus the alternate buffer and buffers can be opened with `o`.
 
 See the [keymaps](./keymap.md#tabs)
 
