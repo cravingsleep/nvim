@@ -11,7 +11,15 @@ return {
     },
     sections = {
       lualine_a = { 'mode', 'branch' },
-      lualine_b = { 'filename' },
+      lualine_b = {
+        {
+          'buffers',
+          show_modified_status = false,
+          symbols = {
+            alternate_file = '',
+          },
+        },
+      },
       lualine_c = {},
       lualine_x = {
         { 'lsp_status', cond = function() return vim.bo.buftype ~= 'terminal' end },
