@@ -7,6 +7,15 @@ return {
     detached = true,
     list = { position = 'left' },
     folds = { folded = false },
+    hooks = {
+      before_open = function(results, open, jump)
+        if #results == 1 then
+          jump(results[1])
+        else
+          open(results)
+        end
+      end,
+    },
   },
   keys = {
     { 'gd', function() require('glance').actions.open('definitions') end, { noremap = true } },
