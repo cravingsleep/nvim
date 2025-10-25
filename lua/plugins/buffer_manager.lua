@@ -21,7 +21,7 @@ return {
   },
   keys = {
     { '<C-e>', function() require('buffer_manager.ui').toggle_quick_menu() end, { noremap = true } },
-    { '[b', function() require('buffer_manager.ui').nav_prev() end, { noremap = true } },
-    { ']b', function() require('buffer_manager.ui').nav_next() end, { noremap = true } },
+    { '[b', '<cmd>bprev<cr>' },
+    { ']b', '<cmd>bnext<cr>' },
   },
 }
