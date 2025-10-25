@@ -22,6 +22,7 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 
 |Keys|Action|
 |----|------|
+|`<leader>b`|show all buffers|
 |`[b`|go to next item in harpoon list|
 |`]b`|go to previous item in harpoon list|
 |`<C-e>`|select from harpoon list|
