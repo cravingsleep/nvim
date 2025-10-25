@@ -84,7 +84,12 @@ vim.keymap.set('n', '<leader>t', function()
 
   -- If we're already in a terminal, toggle back
   if buftype == 'terminal' then
-    vim.cmd('b#')
+    -- check we have a buffer to return too
+    local alt_buf = vim.fn.bufnr('#')
+
+    if alt_buf ~= -1 then
+      vim.cmd('b#')
+    end
     return
   end
 
