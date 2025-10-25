@@ -22,6 +22,7 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 
 |Keys|Action|
 |----|------|
+|`<leader>b`|show all buffers|
 |`[b`|go to next item in harpoon list|
 |`]b`|go to previous item in harpoon list|
 |`<C-e>`|select from harpoon list|
@@ -52,7 +53,8 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |----|------|
 |`<leader>ca` or `g.`|view code actions|
 |`<leader>s`|show lsp document symbols|
-|`<leader>d`|show lsp diagnostics|
+|`<leader>d`|show lsp diagnostics for current buffer|
+|`<leader>pd`|show lsp diagnostics for project|
 |`<leader>r`|rename a variable|
 |`gd`|show definitions|
 |`gr`|show references|
