@@ -56,6 +56,8 @@ vim.diagnostic.config({
 
 -- save quickly because I'm bad at hitting the : key
 vim.keymap.set('n', '<leader>w', '<cmd>w<CR>', { noremap = true })
+-- close a buffer quickly
+vim.keymap.set('n', '<leader>q', '<cmd>bd<CR>', { noremap = true })
 
 -- remove search highlights
 vim.keymap.set('n', '<leader>nh', '<cmd>noh<cr>', { noremap = true, silent = true })

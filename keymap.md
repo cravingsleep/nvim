@@ -7,6 +7,7 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |Keys|Action|
 |----|------|
 |`<leader>w`|`:w`|
+|`<leader>q`|`:bd`|
 |`<leader>ya`|yank absolute path of buffer|
 |`<leader>yr`|yank relative path of buffer|
 |`<leader>nh`|remove search highlighting|

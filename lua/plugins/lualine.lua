@@ -7,6 +7,7 @@ return {
   commit = 'b8c23159c0161f4b89196f74ee3a6d02cdc3a955',
   opts = {
     options = {
+      icons_enabled = false,
       theme = 'dracula-nvim',
     },
     sections = {
