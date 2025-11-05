@@ -25,6 +25,7 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |----|------|
 |`<leader>b`|show all buffers with preview|
 |`<C-e>`|show all buffers in manager|
+|`<Tab>`|go to the alternate buffer|
 |`[b`|go to previous buffer|
 |`]b`|go to next buffer|
 
