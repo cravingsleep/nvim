@@ -28,6 +28,7 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |`<Tab>`|go to the alternate buffer|
 |`[b`|go to previous buffer|
 |`]b`|go to next buffer|
+|`<leader>m`|show all marks with preview|
 
 ### Git
 
