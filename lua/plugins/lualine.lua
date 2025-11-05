@@ -13,12 +13,18 @@ return {
     sections = {
       lualine_a = { 'mode', 'branch' },
       lualine_b = {
+        { 'filename' },
         {
-          'buffers',
-          show_modified_status = false,
-          symbols = {
-            alternate_file = '',
-          },
+          function()
+            local alt = vim.fn.bufname('#')
+
+            if alt == '' then
+              return ''
+            end
+
+            return '⇄ ' .. vim.fn.fnamemodify(alt, ':t')
+          end,
+          cond = function() return vim.fn.bufname('#') ~= '' end,
         },
       },
       lualine_c = {},

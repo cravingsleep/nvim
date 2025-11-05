@@ -81,5 +81,10 @@ return {
       function() require('telescope.builtin').git_status() end,
       { noremap = true },
     },
+    {
+      '<leader>m',
+      function() require('telescope.builtin').marks() end,
+      { noremap = true },
+    },
   },
 }
