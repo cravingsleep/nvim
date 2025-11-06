@@ -5,7 +5,16 @@ return {
   opts = {
     modes = {
       search = { enabled = false },
-      char = { enabled = true },
+      char = {
+        enabled = true,
+        -- disable f,t from jumping to the next search and resort to normal vim behaviour
+        char_actions = function()
+          return {
+            [';'] = 'next',
+            [','] = 'prev',
+          }
+        end,
+      },
       remote = { enabled = false },
     },
   },
