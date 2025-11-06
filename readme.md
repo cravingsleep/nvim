@@ -147,7 +147,8 @@ See the [keymaps](./keymap.md#formatting)
 
 To aid navigation in the buffer the [flash](https://github.com/folke/flash.nvim) plugin is included which allows the `f` and `t` motions
 to work across multiple lines as well as highlighting the possible movements it will make. Note the search and remote functionality is
-switched off.
+switched off. Also note the `f` and `t` keys do not move to the next occurence as is common with this plugin, instead normal Vim behaviour
+is respected and only `,` and `;` will move between occurences.
 
 The [autopairs](https://github.com/windwp/nvim-autopairs) plugin is also installed which will automatically complete brackets as you type.
 

@@ -83,7 +83,7 @@ return {
     },
     {
       '<leader>m',
-      function() require('telescope.builtin').marks() end,
+      function() require('telescope.builtin').marks({ mark_type = 'global' }) end,
       { noremap = true },
     },
   },
