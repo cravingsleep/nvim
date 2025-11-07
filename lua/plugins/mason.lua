@@ -1,4 +1,3 @@
----@diagnostic disable: undefined-global
 return {
   'mason-org/mason-lspconfig.nvim',
   commit = '155eac5d8609a2f110041f8ac3491664cc126354',
@@ -36,11 +35,33 @@ return {
     vim.keymap.set('n', 'g.', vim.lsp.buf.code_action, { noremap = true })
     vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename, { noremap = true })
 
-    -- set any custom LSP configs here with `vim.lsp.config`
+    -- turn on clippy for rust
     vim.lsp.config('rust_analyzer', {
       settings = {
         ['rust-analyzer'] = {
           check = { command = 'clippy' },
+        },
+      },
+    })
+
+    -- configure lua to know about neovim vim types
+    vim.lsp.config('lua_ls', {
+      settings = {
+        Lua = {
+          runtime = {
+            version = 'LuaJIT',
+          },
+          diagnostics = {
+            globals = { 'vim' },
+          },
+          workspace = {
+            library = vim.api.nvim_get_runtime_file('', true),
+            checkThirdParty = false,
+          },
+          telemetry = { enable = false },
+          hint = {
+            enable = true,
+          },
         },
       },
     })
