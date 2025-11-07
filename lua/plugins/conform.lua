@@ -1,4 +1,3 @@
----@diagnostic disable: undefined-global
 return {
   'stevearc/conform.nvim',
   commit = '9d859cbfbde7a1bd1770e7c97aef30ec5a237a71',

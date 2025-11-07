@@ -1,4 +1,3 @@
----@diagnostic disable: undefined-global
 return {
   'nvim-lualine/lualine.nvim',
   dependencies = {
