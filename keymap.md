@@ -12,13 +12,6 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |`<leader>yr`|yank relative path of buffer|
 |`<leader>nh`|remove search highlighting|
 
-### Terminal
-
-|Keys|Action|
-|----|------|
-|`<leader>t`|toggle terminal tab|
-|`jj`|exit terminal mode|
-
 ### Buffer Navigation
 
 |Keys|Action|
