@@ -15,6 +15,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.opt.title = true
+vim.opt.titlestring = "nvim - %{fnamemodify(getcwd(), ':t')} (%t)"
+
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 vim.g.mapleader = ' '
@@ -26,7 +29,7 @@ vim.opt.cursorline = true
 -- add line numbers
 vim.opt.number = true
 -- make the line numbers the cursor is not on relative to the cursor
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true (I toggle this a lot depending on mood)
 -- make search smarter, avoid case only if it is in the search query
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -42,7 +45,11 @@ vim.g.loaded_netrwPlugin = 1
 -- enable 24 bit colour
 vim.opt.termguicolors = true
 
--- vim will tell us the showmode in the command buffer but lualine will do
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.smartindent = true
+
 -- that for us so disable it
 vim.opt.showmode = false
 
@@ -57,14 +64,8 @@ vim.diagnostic.config({
 vim.keymap.set('n', '<leader>w', '<cmd>w<CR>', { noremap = true })
 -- close a buffer quickly
 vim.keymap.set('n', '<leader>q', '<cmd>bd<CR>', { noremap = true })
--- switch the alt buffer
-vim.keymap.set('n', '<Tab>', '<cmd>buffer #<CR>', { noremap = true })
-
 -- remove search highlights
 vim.keymap.set('n', '<leader>nh', '<cmd>noh<cr>', { noremap = true, silent = true })
-
--- Press Ctrl-[ to exit terminal mode
-vim.api.nvim_set_keymap('t', '<C-[>', [[<C-\><C-n>]], { noremap = true, silent = true })
 
 -- Yank absolute path of buffer to clipboard
 vim.keymap.set('n', '<leader>ya', function()
@@ -78,36 +79,6 @@ vim.keymap.set('n', '<leader>yr', function()
   local path = vim.fn.expand('%')
   vim.fn.setreg('+', path)
   print(path)
-end, { noremap = true })
-
--- quick access to the terminal
-vim.keymap.set('n', '<leader>t', function()
-  local current_buf = vim.api.nvim_get_current_buf()
-  local buftype = vim.api.nvim_buf_get_option(current_buf, 'buftype')
-
-  -- If we're already in a terminal, toggle back
-  if buftype == 'terminal' then
-    -- check we have a buffer to return too
-    local alt_buf = vim.fn.bufnr('#')
-
-    if alt_buf ~= -1 then
-      vim.cmd('b#')
-    end
-    return
-  end
-
-  -- Try to find an existing terminal buffer
-  for _, buf in ipairs(vim.api.nvim_list_bufs()) do
-    if vim.api.nvim_buf_is_loaded(buf) and vim.api.nvim_buf_get_option(buf, 'buftype') == 'terminal' then
-      vim.api.nvim_set_current_buf(buf)
-      vim.cmd('startinsert') -- enter insert mode in terminal
-      return
-    end
-  end
-
-  -- Otherwise, open a new terminal
-  vim.cmd('te')
-  vim.cmd('startinsert') -- immediately enter insert mode
 end, { noremap = true })
 
 -- Setup lazy.nvim
