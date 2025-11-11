@@ -31,16 +31,6 @@ Just git clone into `~/.config/nvim`.
 - The leader key is the spacebar
 - Saving a file is bound to `<leader>w`
 
-## Terminal
-
-A terminal tab can be opened by using `<leader>t`. This will open a new terminal if one does not exist. If
-one does exist it will switch the tab to it. It automatically puts you in insert mode which can be exited
-quickly by using `jj`.
-
-Pressing `<leader>t` in normal mode in a terminal tab will go back the previously accessed tab.
-
-See the [keymaps](./keymap.md#terminal)
-
 ## Recommended Key Swaps
 
 Using [karabiner](https://karabiner-elements.pqrs.org/) it is recommended to change
