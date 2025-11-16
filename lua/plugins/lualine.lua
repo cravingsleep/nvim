@@ -2,6 +2,7 @@ return {
   'nvim-lualine/lualine.nvim',
   dependencies = {
     { 'nvim-tree/nvim-web-devicons', commit = DepsCommits.devicons },
+    { 'cravingsleep/bufonite', commit = DepsCommits.bufonite },
   },
   commit = 'b8c23159c0161f4b89196f74ee3a6d02cdc3a955',
   opts = {
@@ -14,24 +15,22 @@ return {
       lualine_b = {
         { 'filename' },
         {
+          function() return require('bufonite').lualine_altbuffer() end,
+        },
+        {
           function()
-            local alt = vim.fn.bufname('#')
+            local buffers_open = require('bufonite').get_buffer_count()
 
-            if alt == '' then
-              return ''
-            end
-
-            return '⇄ ' .. vim.fn.fnamemodify(alt, ':t')
+            return tostring(buffers_open)
           end,
-          cond = function() return vim.fn.bufname('#') ~= '' end,
         },
       },
       lualine_c = {},
       lualine_x = {
-        { 'lsp_status', cond = function() return vim.bo.buftype ~= 'terminal' end },
+        { 'lsp_status' },
       },
       lualine_y = {
-        { 'location', cond = function() return vim.bo.buftype ~= 'terminal' end },
+        { 'location' },
       },
       lualine_z = {
         { 'datetime', style = '%H:%M' },
