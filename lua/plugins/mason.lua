@@ -12,6 +12,9 @@ return {
 
       -- python
       'basedpyright',
+
+      -- C
+      'clangd',
     },
   },
   dependencies = {
