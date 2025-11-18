@@ -6,6 +6,8 @@ return {
       local gitsigns = require('gitsigns')
 
       vim.keymap.set('n', '<leader>hd', gitsigns.diffthis, { buffer = bufnr })
+      vim.keymap.set('n', ']c', function() gitsigns.nav_hunk('next') end, { buffer = bufnr })
+      vim.keymap.set('n', '[c', function() gitsigns.nav_hunk('prev') end, { buffer = bufnr })
     end,
   },
 }

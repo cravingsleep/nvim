@@ -21,7 +21,7 @@ return {
       { noremap = true },
     },
     {
-      '<leader>b',
+      '<C-e>',
       function() require('telescope.builtin').buffers() end,
       { noremap = true },
     },
