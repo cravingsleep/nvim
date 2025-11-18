@@ -3,6 +3,6 @@ return {
   version = '1.2.2',
   config = function() require('telescope').load_extension('frecency') end,
   keys = {
-    { '<C-e>', '<cmd>:Telescope frecency<cr>' },
+    { '<leader>v', '<cmd>:Telescope frecency<cr>' },
   },
 }

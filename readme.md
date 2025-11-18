@@ -67,8 +67,11 @@ versions.
 
 ### Buffer Navigation
 
-Navigating buffers is provided by [buffer-manager](https://github.com/j-morano/buffer_manager.nvim). Buffers can be viewed, opened
-and deleted with it. It will always focus the alternate buffer and buffers can be opened with `o`.
+Navigating buffers is provided by [telescope](https://github.com/nvim-telescope/telescope.nvim). You can use
+[frecency](https://github.com/nvim-telescope/telescope-frecency.nvim) to order the buffers too.
+
+The alternate buffer is slightly adjusted by [bufonite](https://github.com/cravingsleep/bufonite). The alternate
+buffer will never be a buffer that has been deleted.
 
 See the [keymaps](./keymap.md#tabs)
 

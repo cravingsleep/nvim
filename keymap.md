@@ -16,8 +16,8 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 
 |Keys|Action|
 |----|------|
-|`<leader>b`|show all buffers with preview|
-|`<C-e>`|show all buffers in manager|
+|`<C-e>`|show all buffers with preview|
+|`<leader>v`|show all buffers in frecency view|
 |`<Tab>`|go to the alternate buffer|
 |`[b`|go to previous buffer|
 |`]b`|go to next buffer|
@@ -29,6 +29,8 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |----|------|
 |`<leader>hd` |highlights the git diff|
 |`<leader>gs` |view the project git status|
+|`]c` |go to the next git hunk|
+|`[c` |go to the previous git hunk|
 
 ### File Finder
 
