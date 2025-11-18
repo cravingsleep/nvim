@@ -2,7 +2,7 @@ return {
   'nvim-lualine/lualine.nvim',
   dependencies = {
     { 'nvim-tree/nvim-web-devicons', commit = DepsCommits.devicons },
-    { 'cravingsleep/bufonite', commit = DepsCommits.bufonite },
+    { 'bufonite', dir = '~/Documents/projects/bufonite' },
   },
   commit = 'b8c23159c0161f4b89196f74ee3a6d02cdc3a955',
   opts = {
