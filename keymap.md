@@ -17,11 +17,15 @@ A full list of all the keymaps (in normal mode unless otherwise stated):
 |Keys|Action|
 |----|------|
 |`<C-e>`|show all buffers with preview|
-|`<leader>v`|show all buffers in frecency view|
+|`<leader>b`|show all buffers with preview|
 |`<Tab>`|go to the alternate buffer|
-|`[b`|go to previous buffer|
-|`]b`|go to next buffer|
 |`<leader>m`|show all marks with preview|
+
+### Telescope
+
+|Keys|Action|
+|----|------|
+|`<C-o>`|select the entry in insert mode|
 
 ### Git
 

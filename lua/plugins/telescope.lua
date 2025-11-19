@@ -3,6 +3,14 @@ return {
   commit = 'b4da76be54691e854d3e0e02c36b0245f945c2c7',
   dependencies = { 'nvim-lua/plenary.nvim', commit = DepsCommits.plenary },
   opts = {
+    defaults = {
+      path_display = { 'filename_first' },
+      mappings = {
+        i = {
+          ['<C-o>'] = require('telescope.actions').select_default,
+        },
+      },
+    },
     pickers = {
       lsp_document_symbols = {
         sorting_strategy = 'ascending',
@@ -22,6 +30,11 @@ return {
     },
     {
       '<C-e>',
+      function() require('telescope.builtin').buffers({ sort_mru = true, ignore_current_buffer = true }) end,
+      { noremap = true },
+    },
+    {
+      '<leader>b',
       function() require('telescope.builtin').buffers({ sort_mru = true, ignore_current_buffer = true }) end,
       { noremap = true },
     },
