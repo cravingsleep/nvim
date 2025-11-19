@@ -67,8 +67,8 @@ versions.
 
 ### Buffer Navigation
 
-Navigating buffers is provided by [telescope](https://github.com/nvim-telescope/telescope.nvim). You can use
-[frecency](https://github.com/nvim-telescope/telescope-frecency.nvim) to order the buffers too.
+Navigating buffers is provided by [telescope](https://github.com/nvim-telescope/telescope.nvim). Buffers are sorted
+by most recently used.
 
 The alternate buffer is slightly adjusted by [bufonite](https://github.com/cravingsleep/bufonite). The alternate
 buffer will never be a buffer that has been deleted.
