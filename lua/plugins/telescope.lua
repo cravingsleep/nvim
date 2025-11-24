@@ -88,7 +88,11 @@ return {
       function() require('telescope.builtin').diagnostics() end,
       { noremap = true },
     },
-
+    {
+      '<leader><C-p>d',
+      function() require('telescope.builtin').diagnostics({ severity = vim.diagnostic.severity.ERROR }) end,
+      { noremap = true },
+    },
     {
       '<leader>gs',
       function() require('telescope.builtin').git_status() end,
