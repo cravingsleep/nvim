@@ -11,6 +11,8 @@ return {
   },
   opts = {
     formatters_by_ft = {
+      typescript = { 'prettierd' },
+      javascript = { 'prettierd' },
       lua = { 'stylua' },
       rust = { 'rustfmt' },
       python = { 'ruff' },
