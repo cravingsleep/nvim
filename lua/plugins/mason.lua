@@ -34,8 +34,6 @@ return {
       end
     end
 
-    vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { noremap = true })
-    vim.keymap.set('n', 'g.', vim.lsp.buf.code_action, { noremap = true })
     vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename, { noremap = true })
 
     -- turn on clippy for rust
