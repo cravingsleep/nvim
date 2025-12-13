@@ -45,6 +45,18 @@ return {
       },
     })
 
+    vim.lsp.config('vtsls', {
+      settings = {
+        typescript = {
+          tsserver = {
+            experimental = {
+              enableProjectDiagnostics = true,
+            },
+          },
+        },
+      },
+    })
+
     -- configure lua to know about neovim vim types
     vim.lsp.config('lua_ls', {
       settings = {
