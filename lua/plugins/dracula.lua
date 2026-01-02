@@ -1,6 +1,6 @@
 return {
   'Mofiqul/dracula.nvim',
-  commit = '041d923368d540a1e438989ce8f915628081a56a',
+  commit = 'ae752c13e95fb7c5f58da4b5123cb804ea7568ee',
   lazy = false,
   priority = 1000,
   config = function()

@@ -4,7 +4,7 @@ return {
     { 'nvim-tree/nvim-web-devicons', commit = DepsCommits.devicons },
     { 'cravingsleep/bufonite', commit = DepsCommits.bufonite },
   },
-  commit = 'b8c23159c0161f4b89196f74ee3a6d02cdc3a955',
+  commit = '47f91c416daef12db467145e16bed5bbfe00add8',
   opts = {
     options = {
       icons_enabled = false,

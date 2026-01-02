@@ -1,6 +1,6 @@
 return {
   'stevearc/conform.nvim',
-  commit = '9d859cbfbde7a1bd1770e7c97aef30ec5a237a71',
+  commit = '5420c4b5ea0aeb99c09cfbd4fd0b70d257b44f25',
   event = { 'BufWritePre' },
   cmd = { 'ConformInfo' },
   keys = {
@@ -12,6 +12,7 @@ return {
   opts = {
     formatters_by_ft = {
       typescript = { 'prettierd' },
+      typescriptreact = { 'prettierd' },
       javascript = { 'prettierd' },
       lua = { 'stylua' },
       rust = { 'rustfmt' },

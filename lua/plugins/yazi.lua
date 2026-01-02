@@ -1,6 +1,6 @@
 return {
   'mikavilpas/yazi.nvim',
-  version = '13.0.0',
+  version = '13.1.0',
   event = 'VeryLazy',
   dependencies = {
     { 'nvim-lua/plenary.nvim', lazy = true, commit = DepsCommits.plenary },

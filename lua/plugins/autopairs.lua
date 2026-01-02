@@ -1,6 +1,6 @@
 return {
   'windwp/nvim-autopairs',
-  commit = '23320e75953ac82e559c610bec5a90d9c6dfa743',
+  commit = 'c2a0dd0d931d0fb07665e1fedb1ea688da3b80b4',
   event = 'InsertEnter',
   config = true,
 }

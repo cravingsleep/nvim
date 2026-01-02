@@ -1,6 +1,6 @@
 return {
   'nvim-telescope/telescope.nvim',
-  commit = 'b4da76be54691e854d3e0e02c36b0245f945c2c7',
+  commit = '4d0f5e0e7f69071e315515c385fab2a4eff07b3d',
   dependencies = { 'nvim-lua/plenary.nvim', commit = DepsCommits.plenary },
   opts = {
     defaults = {
