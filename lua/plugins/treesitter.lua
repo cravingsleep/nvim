@@ -2,7 +2,7 @@ return {
   'nvim-treesitter/nvim-treesitter',
   lazy = false,
   branch = 'main',
-  commit = '99bd52ba56a4b7c9a8cc50a6140180755e76fac6',
+  commit = '36fcb4a4238928f0b627e1ab84ade0acc1facc2c',
   build = ':TSUpdate',
   config = function()
     local filetypes = { 'lua', 'typescript', 'typescriptreact', 'python', 'c', 'rust' }

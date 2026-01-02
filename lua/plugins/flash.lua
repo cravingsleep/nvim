@@ -1,10 +1,10 @@
 return {
   'folke/flash.nvim',
-  commit = 'b68bda044d68e4026c4e1ec6df3c5afd7eb8e341',
+  commit = 'fcea7ff883235d9024dc41e638f164a450c14ca2',
   event = 'VeryLazy',
   opts = {
     modes = {
-      search = { enabled = false },
+      search = { enabled = true },
       char = {
         enabled = true,
         -- disable f,t from jumping to the next search and resort to normal vim behaviour
@@ -17,5 +17,10 @@ return {
       },
       remote = { enabled = false },
     },
+  },
+  keys = {
+    { 's', mode = { 'n', 'x', 'o' }, function() require('flash').jump() end },
+    { 'S', mode = { 'n', 'x', 'o' }, function() require('flash').treesitter() end },
+    { 'R', mode = { 'o', 'x' }, function() require('flash').treesitter_search() end },
   },
 }

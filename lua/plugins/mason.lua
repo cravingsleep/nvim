@@ -1,6 +1,6 @@
 return {
   'mason-org/mason-lspconfig.nvim',
-  commit = '155eac5d8609a2f110041f8ac3491664cc126354',
+  commit = '4cfe411526a7a99c18281135e8b4765ae6330d15',
   opts = {
     ensure_installed = {
       -- Lua
