@@ -100,7 +100,7 @@ See the [keymaps](./keymap.md#git)
 
 ### File Finder
 
-The file finder is provided by [fff](https://github.com/dmtrKovalenko/fff.nvim). The debug symbols have been turned off.
+The file finder is provided by [Telescope](https://github.com/nvim-telescope/telescope.nvim).
 
 See the [keymaps](./keymap.md#file-finder)
 
