@@ -19,6 +19,11 @@ return {
   },
   keys = {
     {
+      '<leader><leader>',
+      function() require('telescope.builtin').find_files() end,
+      { noremap = true },
+    },
+    {
       'g/',
       function() require('telescope.builtin').live_grep() end,
       { noremap = true },
