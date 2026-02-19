@@ -1,6 +1,6 @@
 return {
   'mason-org/mason-lspconfig.nvim',
-  commit = '4cfe411526a7a99c18281135e8b4765ae6330d15',
+  commit = '21c2a84ce368e99b18f52ab348c4c02c32c02fcf',
   opts = {
     ensure_installed = {
       -- Lua
@@ -18,8 +18,8 @@ return {
     },
   },
   dependencies = {
-    { 'mason-org/mason.nvim', version = '2.1.0', opts = {} },
-    { 'neovim/nvim-lspconfig', version = '2.5.0' },
+    { 'mason-org/mason.nvim', version = '2.2.1', opts = {} },
+    { 'neovim/nvim-lspconfig', version = '2.6.0' },
   },
   init = function()
     -- install formatters since lspconfig can not do them all

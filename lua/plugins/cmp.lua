@@ -1,7 +1,7 @@
 return {
   'saghen/blink.cmp',
-  dependencies = { 'rafamadriz/friendly-snippets', commit = '572f5660cf05f8cd8834e096d7b4c921ba18e175' },
-  version = '1.8.0',
+  dependencies = { 'rafamadriz/friendly-snippets', commit = '6cd7280adead7f586db6fccbd15d2cac7e2188b9' },
+  version = '1.9.1',
   opts = {
     keymap = { preset = 'enter' },
     signature = { enabled = true, window = { show_documentation = false } },
