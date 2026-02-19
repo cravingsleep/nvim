@@ -18,6 +18,9 @@ vim.opt.rtp:prepend(lazypath)
 vim.opt.title = true
 vim.opt.titlestring = "nvim - %{fnamemodify(getcwd(), ':t')} (%t)"
 
+-- keep the viewport from going to the top ane bottom of the screen
+vim.opt.scrolloff = 3
+
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 vim.g.mapleader = ' '
