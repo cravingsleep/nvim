@@ -1,6 +1,6 @@
 return {
   'lewis6991/gitsigns.nvim',
-  commit = '130beacf8a51f00aede9c31064c749136679a321',
+  commit = '9f3c6dd7868bcc116e9c1c1929ce063b978fa519',
   opts = {
     on_attach = function(bufnr)
       local gitsigns = require('gitsigns')

@@ -2,10 +2,10 @@ return {
   'nvim-treesitter/nvim-treesitter',
   lazy = false,
   branch = 'main',
-  commit = '36fcb4a4238928f0b627e1ab84ade0acc1facc2c',
+  commit = 'ecdae44baefeffceade8b0c752d80ececad28e76',
   build = ':TSUpdate',
   config = function()
-    local filetypes = { 'lua', 'typescript', 'typescriptreact', 'python', 'c', 'rust', 'go', 'ruby' }
+    local filetypes = { 'lua', 'typescript', 'tsx', 'python', 'c', 'rust', 'go', 'ruby' }
 
     require('nvim-treesitter').install(filetypes)
 
