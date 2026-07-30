@@ -5,11 +5,6 @@ return {
   opts = {
     defaults = {
       path_display = { 'filename_first' },
-      mappings = {
-        i = {
-          ['<C-o>'] = require('telescope.actions').select_default,
-        },
-      },
     },
     pickers = {
       lsp_document_symbols = {
