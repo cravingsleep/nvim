@@ -24,7 +24,7 @@ return {
   init = function()
     -- install formatters since lspconfig can not do them all
     local registry = require('mason-registry')
-    local wanted_tools = { 'ruff' }
+    local wanted_tools = { 'ruff', 'clang-format' }
 
     for _, tool in ipairs(wanted_tools) do
       local pkg = registry.get_package(tool)
@@ -55,6 +55,33 @@ return {
           },
         },
       },
+    })
+
+    local gdscript_port = 6005
+    -- local godot_pipe = '/tmp/godot.pipe'
+    local godot_group = vim.api.nvim_create_augroup('GodotLsp', { clear = true })
+
+    vim.api.nvim_create_autocmd('FileType', {
+      group = godot_group,
+      pattern = 'gdscript',
+      callback = function(ev)
+        local root = vim.fs.dirname(vim.fs.find({ 'project.godot', '.git' }, {
+          upward = true,
+          path = vim.api.nvim_buf_get_name(ev.buf),
+        })[1]) or vim.uv.cwd()
+
+        vim.lsp.start({
+          name = 'Godot',
+          cmd = vim.lsp.rpc.connect('127.0.0.1', gdscript_port),
+          root_dir = root,
+          bufnr = ev.buf,
+          -- on_attach = function()
+          --   if vim.v.servername ~= godot_pipe then
+          --     pcall(vim.fn.serverstart, godot_pipe)
+          --   end
+          -- end,
+        })
+      end,
     })
 
     -- configure lua to know about neovim vim types
