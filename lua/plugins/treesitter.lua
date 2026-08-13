@@ -5,7 +5,7 @@ return {
   commit = 'ecdae44baefeffceade8b0c752d80ececad28e76',
   build = ':TSUpdate',
   config = function()
-    local filetypes = { 'lua', 'typescript', 'tsx', 'python', 'c', 'rust', 'go', 'ruby' }
+    local filetypes = { 'lua', 'typescript', 'tsx', 'python', 'c', 'rust', 'go', 'ruby', 'gdscript' }
 
     require('nvim-treesitter').install(filetypes)
 
