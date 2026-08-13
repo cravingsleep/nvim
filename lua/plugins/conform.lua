@@ -1,6 +1,6 @@
 return {
   'stevearc/conform.nvim',
-  commit = 'c2526f1cde528a66e086ab1668e996d162c75f4f',
+  commit = '016802de402556da54c36bd7359b441266b01cdd',
   event = { 'BufWritePre' },
   cmd = { 'ConformInfo' },
   keys = {

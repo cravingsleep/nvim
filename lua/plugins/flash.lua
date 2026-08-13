@@ -1,6 +1,6 @@
 return {
   'folke/flash.nvim',
-  commit = 'fcea7ff883235d9024dc41e638f164a450c14ca2',
+  commit = 'b6346946d10d07998efee029fb0f7a593806d0cd',
   event = 'VeryLazy',
   opts = {
     modes = {
