@@ -24,7 +24,7 @@ return {
   init = function()
     -- install formatters since lspconfig can not do them all
     local registry = require('mason-registry')
-    local wanted_tools = { 'ruff', 'clang-format' }
+    local wanted_tools = { 'ruff', 'clang-format', 'gdtoolkit' }
 
     for _, tool in ipairs(wanted_tools) do
       local pkg = registry.get_package(tool)

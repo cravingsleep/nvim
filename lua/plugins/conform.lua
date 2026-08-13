@@ -15,6 +15,7 @@ return {
       typescriptreact = { 'prettierd' },
       javascript = { 'prettierd' },
       lua = { 'stylua' },
+      gdscript = { 'gdformat' },
       rust = { 'rustfmt' },
       -- python = { 'ruff' },
     },
