@@ -1,6 +1,6 @@
 return {
   'rachartier/tiny-code-action.nvim',
-  commit = '2215a7311b6eac9535695167c3a38d10c3eab444',
+  commit = '0d040ed81f7953118b81cd12681fcdfcac069803',
   dependencies = {
     { 'nvim-lua/plenary.nvim', commit = DepsCommits.plenary },
   },

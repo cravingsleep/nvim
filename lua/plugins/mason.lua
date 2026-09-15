@@ -1,6 +1,6 @@
 return {
   'mason-org/mason-lspconfig.nvim',
-  commit = '21c2a84ce368e99b18f52ab348c4c02c32c02fcf',
+  commit = '67029ccdac1ef8941e13b826417bc0ffac24cc86',
   opts = {
     ensure_installed = {
       -- Lua
@@ -10,6 +10,9 @@ return {
       -- Rust
       'rust_analyzer',
 
+      -- Go
+      'gopls',
+
       -- python
       'basedpyright',
 
@@ -18,13 +21,13 @@ return {
     },
   },
   dependencies = {
-    { 'mason-org/mason.nvim', version = '2.2.1', opts = {} },
-    { 'neovim/nvim-lspconfig', version = '2.6.0' },
+    { 'mason-org/mason.nvim', version = '2.3.1', opts = {} },
+    { 'neovim/nvim-lspconfig', version = '2.11.0' },
   },
   init = function()
     -- install formatters since lspconfig can not do them all
     local registry = require('mason-registry')
-    local wanted_tools = { 'ruff', 'clang-format' }
+    local wanted_tools = { 'ruff', 'clang-format', 'gdtoolkit' }
 
     for _, tool in ipairs(wanted_tools) do
       local pkg = registry.get_package(tool)
@@ -56,6 +59,14 @@ return {
         },
       },
     })
+
+    -- Prefer Xcode's toolchain so SourceKit can resolve Xcode/macros consistently.
+    local xcode_developer_dir = '/Applications/Xcode.app/Contents/Developer'
+    vim.lsp.config('sourcekit', {
+      cmd = { 'xcrun', 'sourcekit-lsp' },
+      cmd_env = { DEVELOPER_DIR = xcode_developer_dir },
+    })
+    vim.lsp.enable('sourcekit')
 
     local gdscript_port = 6005
     -- local godot_pipe = '/tmp/godot.pipe'
