@@ -16,6 +16,7 @@ return {
       javascript = { 'prettierd' },
       lua = { 'stylua' },
       gdscript = { 'gdformat' },
+      go = { 'gofmt' },
       rust = { 'rustfmt' },
       -- python = { 'ruff' },
     },

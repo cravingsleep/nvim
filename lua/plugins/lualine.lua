@@ -8,7 +8,7 @@ return {
   opts = {
     options = {
       icons_enabled = false,
-      theme = 'dracula-nvim',
+      theme = 'catppuccin-latte',
     },
     sections = {
       lualine_a = { 'mode', 'branch' },

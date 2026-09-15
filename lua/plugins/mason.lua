@@ -10,6 +10,9 @@ return {
       -- Rust
       'rust_analyzer',
 
+      -- Go
+      'gopls',
+
       -- python
       'basedpyright',
 
@@ -56,6 +59,14 @@ return {
         },
       },
     })
+
+    -- Prefer Xcode's toolchain so SourceKit can resolve Xcode/macros consistently.
+    local xcode_developer_dir = '/Applications/Xcode.app/Contents/Developer'
+    vim.lsp.config('sourcekit', {
+      cmd = { 'xcrun', 'sourcekit-lsp' },
+      cmd_env = { DEVELOPER_DIR = xcode_developer_dir },
+    })
+    vim.lsp.enable('sourcekit')
 
     local gdscript_port = 6005
     -- local godot_pipe = '/tmp/godot.pipe'
