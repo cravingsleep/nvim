@@ -15,7 +15,12 @@ return {
   keys = {
     {
       '<leader><leader>',
-      function() require('telescope.builtin').find_files({ hidden = true }) end,
+      function()
+        require('telescope.builtin').find_files({
+          hidden = true,
+          file_ignore_patterns = { '%.git/' },
+        })
+      end,
       { noremap = true },
     },
     {
