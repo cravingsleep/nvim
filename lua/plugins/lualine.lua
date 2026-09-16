@@ -1,3 +1,5 @@
+local DARK_GRAY = '#4c4f69'
+
 return {
   'nvim-lualine/lualine.nvim',
   dependencies = {
@@ -13,16 +15,10 @@ return {
     sections = {
       lualine_a = { 'mode', 'branch' },
       lualine_b = {
-        { 'filename' },
+        { 'filename', color = { fg = DARK_GRAY } },
         {
-          function() return require('bufonite').lualine_altbuffer() end,
-        },
-        {
-          function()
-            local buffers_open = require('bufonite').get_buffer_count()
-
-            return tostring(buffers_open)
-          end,
+          function() return require('bufonite').lualine_altbuffer({ prefix_icon = '' }) end,
+          color = { fg = DARK_GRAY },
         },
       },
       lualine_c = {},
@@ -30,7 +26,7 @@ return {
         { 'lsp_status' },
       },
       lualine_y = {
-        { 'location' },
+        { 'location', color = { fg = DARK_GRAY } },
       },
       lualine_z = {
         { 'datetime', style = '%H:%M' },
