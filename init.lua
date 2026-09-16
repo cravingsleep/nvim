@@ -4,7 +4,7 @@
 _G.DepsCommits = {
   devicons = '2ae6958df7ced50baac5035cec0c15799eedfbf7',
   plenary = '74b06c6c75e4eeb3108ec01852001636d85a932b',
-  bufonite = '0e002eee32367fbd9f3f122246376cefee455a28',
+  bufonite = 'ee93237a314ab5c61a75053be502fc49c86dd5b9',
 }
 
 require('config.lazy')
